@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 800px;
+    font-family: 'Montserrat', sans-serif;
+}
+.heading{
+    font-size: 38px;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 220px;
+}
+.transactions .heading{
+    display: flex;
+    margin-left: 300px;
+}
+
+.transaction-list{
+    display: flex;
+    justify-content: space-between;
+    width: 750px;
+    margin-left: 10px;
+    margin-top: 80px;
+}
+
+.selection{
+    display: flex;
+    justify-content: right;
+    
+}
+
+.transaction{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid black;
+    margin-top:7px;
+}
+  
+.transaction-name {
+    flex-grow: 1;
+}
+  
+.transaction-revenue {
+    white-space: nowrap;
+}
+  
+h3{
+    text-align: center;
+}
+
+.delete {
+    margin-left: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.delete:hover {
+    transform: scale(.8);
+}
+
+.delete:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.transaction-name i {
+    margin-right: 10px;
+}
+
+.revenue .transaction-revenue, .revenue h3{
+    color:green;
+    font-weight: bold;
+    margin-left:30px;
+
+}
+
+.expenses .transaction-revenue, .expenses h3{
+    color:rgb(234, 7, 7);
+    font-weight: bold;
+}
+
+.revenue , .expenses{
+    margin: 0 20px;
+    padding: 30px;
+    width: 300px;
+    border: 1px solid
+}
+
+.expenses h3, .revenue h3{
+    font-size: 26px;
+}
+
+.selection{
+    display:flex;
+    flex-direction: column;
+    width: 450px;
+    height: 550px;
+    float: right;
+    text-align: center;
+    margin-top: -270px;
+    margin-right: 70px;
+    padding: 30px;
+    border: 1px solid;
+}
+
+.available{
+    font-size: 85px;
+    margin: 25px;
+}
+
+.functions button{
+    margin: 25px;
+    height: 40px;
+    width: 85px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: transform .3s;
+    box-shadow: 3px 3px 10px #689595;
+}
+
+.functions button:hover {
+    transform: scale(.8);
+    color: #678add;
+    box-shadow: 3px 3px 10px #367ad3;
+}
+.functions button:active{
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+
+}
+
+.style .heading{
+    margin-top:50px;
+}
+.color-buttons{
+    margin-top: 30px;
+    width: 250px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.color-buttons button{
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+    border-color: black;
+    cursor: pointer;
+    transition: transform .3s;
+}
+.color-buttons :hover {
+    transform: scale(.9);
+    box-shadow: 0 1px 2px rgba(4, 1, 22, 0.872);
+}
+
+.color-buttons :active {
+    transform: translateY(1px);
+}
+.dark{
+    background-color: rgb(68, 66, 66);
+}
+
+.dollar{
+    background: url(images/fon_dollar.jpg);
+}
+.error{
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    color: red;
+    font-size: 25px;
+}
+.new-panel-add{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(61,141,236,1) 100%);
+    width: 100%;
+    height: inherit;
+}
+
+.heading{
+   color: rgb(74, 78, 82);
+}
+.new-panel-add h2 {
+    margin-bottom: 0;
+}
+
+.new-panel-add label {
+    margin-top: 40px;
+    margin-bottom: 5px;
+    font-size: 26px;
+    
+}
+
+.new-panel-add small {
+    margin-bottom: 15px;
+    font-style: italic;
+    color: #30334c;
+}
+
+.new-panel-add input, select{
+    width: 800px;
+    height: 30px;
+}
+
+.panel-buttons button{
+    margin: 25px;
+    height: 30px;
+    width: 80px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: transform .3s;
+    box-shadow: 3px 3px 10px #689595
+}
+
+.panel-buttons button:hover {
+    transform: scale(.8);
+    color: #678add;
+    box-shadow: 1px 1px 5px #367ad3;
+}
+.panel-buttons button:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}

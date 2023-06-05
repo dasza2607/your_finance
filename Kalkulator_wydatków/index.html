@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator wydatków</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/df88dd0bec.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+    <div class="header">
+        <h1><i class="fas fa-wallet"></i> mBudżet</h1>
+        <p>Twój osobisty menedżer finansów.</p>
+    </div>
+    </header>
+    <main>
+         <section class="transactions">
+            <h2 class="heading">Lista transakcji</h2>
+             <div class="transaction-list">
+                <div class="revenue">
+                    <h3>Przychód:</h3>
+                    <div class="transaction" id="0">
+                        <!--<p class="transaction-name"><i class="fas fa-money-bill-wave"></i> Wypłata</p>
+                        <p class="transaction-revenue">2000zł <button class="delete"><i
+                                        class="fas fa-times"></i></button></p>-->
+                        </div>
+                    </div>
+                <div class ="expenses">
+                    <h3>Wydatki:</h3>
+                  <div class="transaction" id="1">
+                        <!--<p class="transaction-name"><i class="fas fa-cart-arrow-down"></i> Zakupy</p>
+                        <p class="transaction-revenue">-400zł <button class="delete"><i
+                                    class="fas fa-times"></i></button></p>
+                    </div>
+                    <div class="transaction" id="2">
+                        <p class="transaction-name"><i class="fa-solid fa-mug-saucer"></i> Jedzenie</p>
+                        <p class="transaction-revenue">-100zł <button class="delete"><i
+                                    class="fas fa-times"></i></button></p>
+                    </div>
+                    <div class="transaction" id="3">
+                        <p class="transaction-name"><i class="fa-solid fa-icons"></i>  Rozrywka</p>
+                        <p class="transaction-revenue">-50zł <button class="delete"><i class="fas fa-times"></i></button>
+                        </p>
+                    </div> 
+                </div>-->
+            </div>
+        </section>
+        <section class="selection">
+            <div>
+                <h2 class="heading">Dostępne środki:</h2>
+                <p class="available">0zł</p>
+            </div>
+            <div class="functions">
+                <button class="add-transaction"><i class="fas fa-plus"></i> Dodaj transakcję</button>
+                <button class="delete-all"><i class="far fa-trash-alt"></i> Usuń wszystko</button>
+            </div>
+            <div class="style">
+                <h2 class="heading">Wybierz styl:</h2>
+                <div class="color-buttons">
+                    <button class="light"></button>
+                    <button class="dark"></button>
+                    <button class="dollar"></button>
+                </div>
+            </div>
+        </section>
+    </main>
+        </div>
+    </main>
+    <div class="new-panel-add">
+        <h2 class="heading">Dodaj nową transakcję</h2>
+        <p class = "error"></p>
+        <label for="name">Nazwa:</label>
+        <small>(podaj nazwę transakcji)</small>
+        <input type="text" id="name"></input>
+
+        <label for="sum">Kwota:</label>
+        <small>(podaj kwotę transakcji, jeśli dodajesz wydatek, postaw znak minusa na początku kwoty) </small>
+        <input type="number" id="sum">
+
+        <label for="category">Wybierz kategorię:</label>
+        <small>( [ + ] oznacza przychód, [ - ] oznacza wydatek)</small>
+        <select id="category">
+            <option value="none" selected disabled></option>
+            <option value="income">[ + ] Przychód</option>
+            <option value="shopping">[ - ] Zakupy</option>
+            <option value="food">[ - ] Jedzenie</option>
+            <option value="game">[ - ] Rozrywka</option>
+        </select>
+
+        <div class="panel-buttons">
+            <button class="save"><i class="fas fa-save"></i> Zapisz</button>
+            <button class="cancel"><i class="far fa-window-close"></i> Anuluj</button>
+        </div>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+
+</html>
